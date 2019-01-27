@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+/*Padding width will be 300 including padding  */
+*{
+  box-sizing: border-box;
+}
+
+/* */
+body {
+  background-color: black;
+  margin: 0;
+  font-family: 'Exo+2', sans-serif;
+  text-align: center;
+  color: white;
+}
+header{
+  /*position: absolute;*/
+  color: #FFF;
+  left: 0;
+  right: 0;
+}
+
+hr {
+  color: white;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+section.resume {
+  text-align: left;
+}
+h2 {
+  color: #D3D3D3;
+}
