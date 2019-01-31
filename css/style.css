@@ -11,8 +11,13 @@ body {
   margin: 0;
   font-family: 'Exo+2', sans-serif;
   text-align: center;
-  color: white;
 }
+/*
+img {
+  max-width: 100%;
+  height: auto;
+}
+*/
 
 /* header =============*/
 .container {
@@ -27,18 +32,49 @@ header{
   right: 0;
 }
 
-hr {
+.title {
+  font-size: 4em;
+}
+
+.title span {
+  font-weight: 400;
+  color: #D3D3D3;
+  display: block;
+  font-size: .9em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 2.5em;
+}
+
+nav a {
+  margin-top: 2em;
+  display: inline-block;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 3rem;
+  padding: 1.75em;
+  color: #FFF;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+}
+  nav a:hover,
+  nav a:focus{
+  color: black;
+  background: #D3D3D3;
+  border-color: #FFF;
+}
+
+h2 {
   color: white;
 }
 
-.rotate90 {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-.food {
-  padding-top: 3em;
-}
