@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* Style the header */
+header {
+  background-color: Black;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: .5;
+  background: black;
+  padding: 10px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  font-size: 30px;
+  font: center;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: black;
+  padding: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+h1 {
+  font-size: 50px;
+}
+p {
+  font-size: 24px;
+}
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="images/visionbanner.png" alt="Vision" width= "100%"; height="100%">
+</header>
+
+<section>
+  <nav>
+    <h1><u>Developers</u></h1>
+    <ul>
+      <li>Lloyd</li>
+      <li><a href="mailto:llopow3@gmail.com?Subject=Vision713" target="_top" style="font-size:20px">email</a></li>
+      <li>James</li>
+      <li><a href="mailto:James.H.Rhodes.19@dartmouth.edu?Subject=Vision713" target="_top"style="font-size:20px" >email</a></li>
+    </ul>
+    <h1><u>Technology</u></h1>
+    <ul>
+      <li>Xcode</li>
+      <li>Android Studios</li>
+      <li>Unity</li>
+      <li>Github:<a href="github.com/llmaze3" style="font-size:24px;">Here</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <img src="images/spacecar.gif" alt="Space Car" style="float:right;">
+    <h1 style="text-align:center">Vision</h1>
+    <p>Our goal is to provide a mobile augmented reality application that combines Houston’s “Space City” theme influenced by NASA and Houston’s hip-hop scene of the 90s lead by Dj Screw and the Screwed Up Click.
+      Some of these elements include: astronaunts, nice cars, and great music. These elements and many more are still deeply rooted in the city to this day.</p>
+    <p>The app is an augmented reality music visualizer application that doesn’t require a headset. It’s in-app functionalities also use researched psychotherapy methods to prevent opioid use.</p>
+    <p>Vision713 will introduce a growing technology to an audience that is both old and young, by using nostalgic themes of a region that has expanded internationally over the years</p>
+    <p>We, the creators, are currently seeking money to help support the project. Our objective is to purchase more 3-D models to reduce the time and stress for developer to ensure the app is production ready in minimal amount of time.</p>
+  </article>
+
+</section>
+
+<footer>
+  <h1>VISION713. Coming to a model device store near you.</h1>
+</footer>
+
+</body>
+</html>
