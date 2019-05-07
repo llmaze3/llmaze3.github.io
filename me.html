@@ -21,8 +21,18 @@ body {
 }
 /* header =============*/
 .container {
-  width: 95%;
+  width: 80%;
   margin: 0 auto;
+}
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 header{
   /*position: absolute;*/
@@ -30,11 +40,12 @@ header{
   left: 0;
   right: 0;
 }
+
 hr {
   color: white;
 }
 .button {
-  background-color: black; 
+  background-color: black;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -44,19 +55,34 @@ hr {
   font-size: 16px;
   float: left;
   }
+  @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 </style>
 <body style="background-color:black">
 <button onclick="goBack()" class="button">Home</button>
 <header>
   <h1 class = "title" style="clear:left;">Me</h1>
 </header>
-<section class="category">
-  <div class = "container">
-    <h2 style="color:grey">About</h2>
-    <p1 style="color:white; text-align:center;">Pearland, Texas<br> Louisiana State University<Br> Computer Science Major <br> (DJ) Forever <br> Longboarder </p1>
-    <h4 style="color:grey">MORE</h4>
-    <p2 style="color:white; text-align:center;">Lifting Weights <br> Running <br> Yoga <br> Directing <br> Anything Art</p2>
+<section>
+  <div class="row">
+    <div class="column">
+      <img src="pics/IMG_5519.jpg" alt="Dog" style="width: 100%">
+      <h2 style="color:grey">career</h2>
+      <p style="color:white; text-align:center;"> My goal is still to be the best programmer I can be. I am interested in mobile application development. Recently, I have been excited about working with augmented and virtual reality. I have developed prototype augmented reality applications. My Video Game Design group developed a virtual reality game with a complete story. In the future I would like to work for myself. My main motivation is to be able to set my own work hours. I also really enjoy creating original projects that represent me.</p>
+      <img src="pics/t.png" alt="Dog" style="width: 100%">
+    </div>
+    <div class="column">
+      <h2 style="color:grey">about</h2>
+      <p style="color:white; text-align:center;">I was born in houston. Raised in Pearland. As a kid I strived to do my very best in school. I have played basketball, soccer, and finished high school on the varsity football team. I was involved in many different clubs and organizations. While in the Pearland Youth Action Council, I obtained many volunteer hours and worked closely with city council. During my senior year of high school, I co-founded my school’s African American Culture Club. My main hobbies were weight lifting and making short films. Next it was time to move onto louisiana state university to purse a degree in computer science. Tutoring, supplemental instruction sessions, and group study aided my success at lsu. I also transitioned into a long boarder to get around campus. Boarding was a lifestyle choice that I have yet to regret. I attended many different clubs to stay active while searching for the best career path to take. Outside of class i learned how to time manage work, cooking, and social life.
+      <img src="pics/IMG_3077.jpg" alt="Dog" style="width: 100%">
+      <h2 style="color:grey">Lifestyle</h2>
+      <p>I am excited to see where the boarding lifestyle will take me. I have influenced five people to start long boarding. Everyone enjoys it as much as I do. I will continue to develop my longboard dancing skills. I have to develop my beat matching skills to become a better DJ. I am not as excited to DJ parties or clubs as I am to just make mixes for myself and others to enjoy. I also strive to step my fashion game up. I am currently not sure what exactly that will look like, but I am taking notes from modern day influencers.</p>
+      </p>
   </div>
 </section>
+
 </body>
 </html>
