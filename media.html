@@ -17,6 +17,77 @@ body {
       margin: 0;
       text-align: center;
       color: white;}
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;
+      max-height:4000px;}
+
+/* Slideshow container */
+.slideshow-container {
+        max-width: 1000px;
+        max-height: 4000px;
+        position: relative;
+        margin: auto;
+      }
+
+/* Caption text */
+.text {
+        font-family: Verdana, sans-serif;
+        color: white;
+        font-size: 30px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+        color: grey;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: purple;
+}
+
+/* Fading animation */
+  .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+}
+
+@keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+}
 .button {
   background-color: black;
   border: none;
@@ -36,6 +107,62 @@ body {
 </header>
 
 <section>
+  <div class="container">
+    <h2 style="color:grey">Sound</h2>
+    <iframe width="50%" height="166" scrolling="no"
+    frameborder="no" allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/426422448&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 style="color:grey">Photos </h2>
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="pics/vest1.jpg" style="width:100%">
+      <div class="text">"HEY." Denim vest made and modeled by Lloyd</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="pics/vest2.jpg" style="width:100%">
+      <div class="text">"HEY." Denim vest made and modeled by Lloyd</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="pics/good3.JPG" style="width:100%">
+      <div class="text">"HEY." Denim vest made and modeled by Lloyd</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 5</div>
+      <img src="pics/moneyshirt.png" style="width:100%">
+      <div class="text">#montrosepaintwall</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 5</div>
+      <img src="pics/boat1.jpg" style="width:100%">
+      <div class="text">Graduation Party</div>
+    </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</section>
+
+<section>
 <div class="container">
   <h2 style="color:grey">Action</h2>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/uPzJFMuvyNs" frameborder="0"
@@ -47,16 +174,27 @@ body {
 </div>
 </section>
 
-<section>
-  <div class="container">
-    <h2 style="color:grey">Sound</h2>
-    <iframe width="100%" height="166" scrolling="no"
-    frameborder="no" allow="autoplay"
-    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/426422448&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-  </div>
-</section>
+<script>
+var slideIndex = 0;
+showSlides();
 
-
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
 
 </body>
 </html>
