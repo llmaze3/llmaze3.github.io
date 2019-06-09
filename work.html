@@ -21,6 +21,11 @@
   padding: 10px 0;
   display: none;
 }
+#photoDiv{
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+}
 .button{
   background-color: black;
   border: none;
@@ -35,9 +40,10 @@
 }
 </style>
 </head>
-
-<body style="background-color:black" class="container">
-<button onclick="goBack()" class="button">Home</button>
+<body style="background-color:black;" class="container">
+<div align="left">
+  <button onclick="goBack()" class="button">Home</button>
+</div>
 <header>
   <h1 class = "title">Work <br> <a href="https://github.com/llmaze3">Github</a></h1>
 </header>
@@ -132,6 +138,12 @@
   <img src="pics/erdiagrams.png" alt="ERdiagrans" style="width:500px; height:500px;">
   <img src="pics/Sqlpics.png" alt="Sqlpics" style="width:500px; height:500px;">
 </div>
+<button class="button" onclick="oneFunction()">photoshop</button>
+<div id="photoDiv">
+  <img src="pics/MadisonPoster.png" alt="MadisonPoster" style="width:500px; height:500px;">
+  <img src="pics/artwork.png" alt="artwork" style="width:500px; height:500px;">
+  <img src="pics/musicpic.jpg" alt="artwork" style="width:500px; height:500px;">
+</div>
 <script>
 function goBack() {
   window.history.back();
@@ -158,6 +170,14 @@ function anoFunction(){
     w.style.display = "none";
   } else {
     w.style.display = "block";
+  }
+}
+function oneFunction(){
+  var a = document.getElementById("photoDiv");
+  if (a.style.display == "block") {
+    a.style.display = "none";
+  } else {
+    a.style.display = "block";
   }
 }
 </script>
