@@ -16,6 +16,11 @@
   padding: 10px 0;
   display: none;
 }
+#anoDiv{
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+}
 .button{
   background-color: black;
   border: none;
@@ -122,6 +127,11 @@
 <div id="nextDiv">
   <a href="https://thetaystytreats.com"><img src="pics/Taylornowhite.png" alt="TaylorNoWhite" style="width:500px; height:500px;"></a>
 </div>
+<button class="button" onclick="anoFunction()">database management</button>
+<div id="anoDiv">
+  <img src="pics/erdiagrams.png" alt="ERdiagrans" style="width:500px; height:500px;">
+  <img src="pics/Sqlpics.png" alt="Sqlpics" style="width:500px; height:500px;">
+</div>
 <script>
 function goBack() {
   window.history.back();
@@ -140,6 +150,14 @@ function nextFunction(){
     y.style.display = "none";
   } else {
     y.style.display = "block";
+  }
+}
+function anoFunction(){
+  var w = document.getElementById("anoDiv");
+  if (w.style.display == "block") {
+    w.style.display = "none";
+  } else {
+    w.style.display = "block";
   }
 }
 </script>
