@@ -6,22 +6,7 @@
 <title>Lloydmp3 Forever</title>
 <link href="css/stylework.css" rel="stylesheet" type="text/css">
 <style>
-#myDiv{
-  width: 100%;
-  padding: 10px 0;
-  display: none;
-}
-#nextDiv{
-  width: 100%;
-  padding: 10px 0;
-  display: none;
-}
-#anoDiv{
-  width: 100%;
-  padding: 10px 0;
-  display: none;
-}
-#photoDiv{
+#myDiv, #Jupyter, #nextDiv, #anoDiv, #photoDiv{
   width: 100%;
   padding: 10px 0;
   display: none;
@@ -145,6 +130,11 @@
   <img src="pics/artwork.png" alt="artwork" style="width:500px; height:500px;">
   <img src="pics/musicpic.jpg" alt="artwork" style="width:500px; height:500px;">
 </div>
+<button class="button" onclick="jnFunction()">Jupyter Notebook</button>
+<div id="Jupyter">
+  <img src="pics/Dave.png" alt="MadisonPoster" style="width:700px; height:500px;">
+  <img src="pics/plt.png" alt="artwork" style="width:700px; height:500px;">
+</div>
 <script>
 function goBack() {
   window.history.back();
@@ -179,6 +169,14 @@ function oneFunction(){
     a.style.display = "none";
   } else {
     a.style.display = "block";
+  }
+}
+function jnFunction() {
+  var x = document.getElementById("Jupyter");
+  if (x.style.display == "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
 }
 </script>
