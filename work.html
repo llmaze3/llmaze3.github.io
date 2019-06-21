@@ -6,7 +6,7 @@
 <title>Lloydmp3 Forever</title>
 <link href="css/stylework.css" rel="stylesheet" type="text/css">
 <style>
-#myDiv, #Jupyter, #nextDiv, #anoDiv, #photoDiv{
+#myDiv, #Jupyter, #nextDiv, #anoDiv, #photoDiv, #Java, #Arc{
   width: 100%;
   padding: 10px 0;
   display: none;
@@ -130,15 +130,57 @@
   <img src="pics/artwork.png" alt="artwork" style="width:500px; height:500px;">
   <img src="pics/musicpic.jpg" alt="artwork" style="width:500px; height:500px;">
 </div>
-<button class="button" onclick="jnFunction()">Jupyter Notebook</button>
+<button class="button" onclick="jnFunction()">jupyter notebook</button>
 <div id="Jupyter">
   <img src="pics/Dave.png" alt="MadisonPoster" style="width:700px; height:500px;">
   <img src="pics/plt.png" alt="artwork" style="width:700px; height:500px;">
 </div>
+
+<button class="button" onclick="javaFunction()()">java notes</button>
+<div id="Java">
+  <section class="resume">
+    <p><h2>Abstraction</h2> Only essential details are displayed to the user(Only focusing on the important stuff). Identifying only the required characteristics of a class. In java it is achieved by interfaces and abstraction classes.
+      If you are going to have abstract methods you need to have an abstract class, but you can have an abstract class without the methods.<br>
+      <b>Encapsulation</b> Is data hiding and Abstraction is detail hiding.  </p>
+    <p><h2>Encapsulation</h2> Wrapping up data under a single unit. Prevents data from being used by code outside the shield. DATA-HIDING. Make all the variables private and then use public methods to set and get the values of the variables.
+      Increases flexibility because the variables can be made read-only or write-only. </p>
+    <p><h2>Generics</h2> Allow types such as Integers, Strings, ect be a parameter to methods, classes, interfaces. Hashset, ArrayList, HashMap uses them. </p>
+    <p><h2>Primitives Data types</h2> Because Java is statically-typed it requires all variables to be declared before they can be used. Int, byte, short, Float..</p>
+    <p><h2>Static</h2> A keyword. A member(method) can be accessed before an object of its class is created.</p>
+    <p><h2>Protected</h2> An Access Modifier: Helps control access to members of a class</p>
+    <p><h2>Switch</h2> multi-level branch statement. Provides easy way to dispatch execution to different parts of code based on the value of the expression. Has cases.</p>
+    <p><h2>Try</h2> Defines a block of code to be tested for errors<br><b>Catch</b> Define a block of code to be executed if there was an error in the try block.</p>
+    <p><h2>If Statements</h2> Most basic control flow statement. The code is executed if the test evaluated is true. <br> <b>Else Statements</b> Provides a secondary path if the executed clause evaluates to false.</p>
+    <p><h2>Public Vs. Private</h2> Private(method, variable) is limited to the class only. </p>
+    <p><h2>Polymorphism</h2> When a parent classes is used to refer to a child class. The only way to access an object is through a reference variable. All java objects are polymorphic. Once declared, the type of a reference can not be changed.
+      A class is polymorphic if it has multiple inheritance. A child class can override a method in a the parent class.
+      Overriden method is hidden from the parent and is not invoked unless the super word is used. </p>
+    <p><h2>Virtual Method Invocation</h2> When compiled, uses the method from the referenced class to verify the method but invokes the method of the class it points to(after the key word new).</p>
+    <p><h2>Inheritance</h2> One class inherit the features(Fields and methods of another) Super Class, Sub Class, and Reusability</p>
+    <p><h2>Extends</h2> Keyword. Is for extending a class. Have to override methods.</p>
+    <p><h2>Implements</h2> Is for implementing an interface(method that has been created, but know defined)</p>
+  </section>
+</div>
+
+<button class="button" onclick="arFunction()">software architectures</button>
+<div id="Arc">
+  <p><h2>Waterfall</h2> Traditional model, used on devices such as remotes where the developers know exactly how to develop it. Once started, developers can't go back and make changes.</p>
+  <p><h2>V-Model</h2> Used by Army and NASA. Each line of code has to work so it is verfied each step of the way. If not, the client might sue. This is a very expensive architecture.</p>
+  <p><h2>Prototyping</h2> Client doesn't know what they want so as the developer you continue to make prototypes.</p>
+  <p><h2>Spiral Model</h2> Advantages of using: Someone might leave the team, risk analysis, study different alternatives, take the least risky one.</p>
+  <p><h2>Agile Methods</h2> The customers are always available. It is simular to waterfall, but changes can be made.</p>
+  <p><h2>Extreme Programming</h2> (Pair Programming) There is a driver and an observer. Refractoring, on-site customer, rubber duck debugging.</p>
+  <h2><u>Types of Requirments</u></h2>
+  <p><h2>Fuctional</h2> Describes required behavior in terms of the required activities.</p>
+  <p><h2>Non-Functional</h2> How? Describe some quality characteristics that the software must posses. All of the -ability words</p>
+  <p><h2>Contraints</h2> Design decision such as choice of platform or interface components. Process contraints: restriction on the technique or resource to build the system.</p>
+</div>
+
 <script>
 function goBack() {
   window.history.back();
 }
+
 function myFunction() {
   var x = document.getElementById("myDiv");
   if (x.style.display == "block") {
@@ -173,6 +215,30 @@ function oneFunction(){
 }
 function jnFunction() {
   var x = document.getElementById("Jupyter");
+  if (x.style.display == "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function javaFunction() {
+  var x = document.getElementById("Java");
+  if (x.style.display == "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function javaFunction() {
+  var x = document.getElementById("Java");
+  if (x.style.display == "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function arFunction() {
+  var x = document.getElementById("Arc");
   if (x.style.display == "block") {
     x.style.display = "none";
   } else {
