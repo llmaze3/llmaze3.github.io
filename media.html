@@ -78,13 +78,6 @@ body {
   .column {
     width: 100%;
   }
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px) {
-  .column {
-    width: 100%;
-  }
-}
   .overlay {
     position: absolute;
     top: 0;
@@ -97,16 +90,25 @@ and (max-device-width : 667px) {
     transition: .5s ease;
     background-color: inherit;
   }
-  .text {
-    color: white;
-    font-size: 20px;
+  }
+}
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  .column {
+    width: 100%;
+  }
+  .overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    background-color: inherit;
   }
 }
 .button {
@@ -120,6 +122,7 @@ and (max-device-width : 667px) {
   font-size: 16px;
   float: left;
   }
+
 </style>
 <body style="background-color:black">
 <a href="https://llmaze3.github.io" class="button">Home</a>
