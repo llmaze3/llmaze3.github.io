@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+/*Padding width will be 300 including padding  */
+*{
+  box-sizing: border-box;
+}
+
+/* */
+body {
+  background-color: black;
+  margin: 0;
+  font-family: 'Exo+2', sans-serif;
+  text-align: center;
+  color: white;
+  /*line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));*/
+}
+
+header{
+  /*position: absolute;*/
+  color: #FFF;
+  left: 0;
+  right: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  color: white;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+section.resume {
+  text-align: left;
+  width: 95%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #D3D3D3;
+  font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+h2 {
+  color: #D3D3D3;
+  font-size: calc(18px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+p {
+  font-size: calc(18px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  color: white;
+}
+a{
+  font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.title {
+  font-size: 4em;
+  padding-bottom: 5%;
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.title span {
+  font-weight: 400;
+  color: #D3D3D3;
+  display: block;
+  font-size: .9em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 2.5em;
+}
+
+nav a {
+  margin-top: 2em;
+  display: inline-block;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: capitalize;
+  /*font-size: 2.5rem;*/
+  padding: 1.75em;
+  color: #FFF;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+}
+
+nav a:hover,
+nav a:focus{
+  color: black;
+  background: #D3D3D3;
+  border-color: #FFF;
+}
+/*
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: #D3D3D3;
+}
+*/
+b{
+  color: #D3D3D3;
+}
+
+@media screen and (max-width: 812px) {
+.column {
+  width: 100%;
+  }
+}
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+.column {
+  width: 100%;
+  }
+}

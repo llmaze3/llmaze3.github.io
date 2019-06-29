@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewprt" content="width=device-width, intial-scale=1">
 <title>Lloydmp3 Forever</title>
-<link href="css/stylework.css" rel="stylesheet" type="text/css">
+<link href="css/newStyle.css" rel="stylesheet" type="text/css">
 <style>
 #myDiv, #Jupyter, #nextDiv, #anoDiv, #photoDiv, #Java, #Arc{
   width: 100%;
@@ -14,15 +14,26 @@
 .button{
   background-color: black;
   border: none;
+  font-size: calc(18px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
+  text-decoration: none;
 }
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: #D3D3D3;
+}
+
+
 </style>
 </head>
 <body style="background-color:black;">
@@ -30,7 +41,7 @@
 <a href="https://llmaze3.github.io" class="button">Home</a>
 </div>
 <header>
-  <h1 class = "title">Work <br> <a href="https://github.com/llmaze3">Github</a></h1>
+  <h2 class = "title">Work <br> <a href="https://github.com/llmaze3">Github</a></h2>
 </header>
 
 <button class="button" onclick="myFunction()">Resume</button>
@@ -149,8 +160,7 @@
     <b>What are the four important features of Data Warehousing? </b>Sub-Oriented Data, Integrated Data, Time Variant Data, Non-Volatile Data <br> <b>ELT</b> To move data on operational data source to centralized data warehousing system, the data destined for an Enterprise Data Warehouses (EDW) must first be (1) extracted from one or more data sources, (2) Transformed into a form that is easy to analyze and consistent with data already in the warehouse, and then finally (3) Loaded into EDW. <br>
     <b>What is database security?</b> The mechanisms that protect the database against intentional or accidental threats. <br> <b>Four tasks that are associated with data administration: </b>Authorization, Access controls, Views, Backup and recovery <br>
     Boyce Codd Normal Form (BCNF) <br> <b>First Normal Form: </b>The domain has to be atomic. <br> <b>Second Normal Form: </b> Have to be in first normal for and remove all partial dependencies. <b>Fuctional Dependency: </b>Require that the value for a certain set of attributes determines uniquely the value for another set of attributes. <br>
-    <b>Third Normal Form: </b> Remove transitive dependencies by moving them to a new table and creating a foriegn key to reference that table. <br> <b>Armstrong’s Axioms:</b> reflexivity, augmentation, transitivity</b> <br>
-</p>
+    <b>Third Normal Form: </b> Remove transitive dependencies by moving them to a new table and creating a foriegn key to reference that table. <br> <b>Armstrong’s Axioms:</b> reflexivity, augmentation, transitivity</b> <br></p>
   </section>
 </div>
 <button class="button" onclick="oneFunction()">Graphic Design</button>
@@ -211,6 +221,8 @@
     <p><b>Inheritance</b> One class inherit the features(Fields and methods of another) Super Class, Sub Class, and Reusability</p>
     <p><b>Extends</b> Keyword. Is for extending a class. Have to override methods.</p>
     <p><b>Implements</b> Is for implementing an interface(method that has been created, but know defined)</p>
+    <p><b>Overloading Methods</b> Methods within a class can have the same name if they have different parameter lists</p>
+    <p><b>Variables</b> Have to be declared and then initialized (given some value.)</p>
   </section>
 </div>
 

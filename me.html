@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewprt" content="width=device-width, intial-scale=1">
 <title>Lloydmp3 Forever</title>
-<link href="llmaze3.github.io/css/style.css" rel="stylesheet" type="text/css">
+<link href="css/newStyle.css" rel="stylesheet" type="text/css">
 </head>
 <script>
 function goBack() {
@@ -35,8 +35,8 @@ body {
   display: table;
   clear: both;
 }
+/*
 header{
-  /*position: absolute;*/
   color: #FFF;
   left: 0;
   right: 0;
@@ -50,6 +50,7 @@ hr {
 p {
   font-size: 30px;
 }
+*/
 .button {
   background-color: black;
   border: none;
@@ -60,7 +61,10 @@ p {
   display: inline-block;
   font-size: 16px;
   float: left;
+  font-size: calc(18px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
   }
+
   @media screen and (max-width: 812px) {
   .column {
     width: 100%;
@@ -74,13 +78,14 @@ p {
     }
   }
 }
-@media only screen 
+@media only screen
 and (min-device-width : 414px)
 and (max-device-width : 736px) {
   .column {
     width: 100%;
   }
 }
+
 </style>
 <body style="background-color:black">
 <a href="https://llmaze3.github.io" class="button">Home</a>
