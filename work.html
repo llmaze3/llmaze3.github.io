@@ -6,7 +6,7 @@
 <title>Lloydmp3 Forever</title>
 <link href="css/newStyle.css" rel="stylesheet" type="text/css">
 <style>
-#myDiv, #Jupyter, #nextDiv, #anoDiv, #photoDiv, #Java, #Arc{
+#myDiv, #Jupyter, #nextDiv, #anoDiv, #photoDiv, #Java, #Arc, #game, #ios{
   width: 100%;
   padding: 10px 0;
   display: none;
@@ -242,6 +242,108 @@ a:visited {
   </section>
 </div>
 
+<button class="button" onclick="gameFunc()">Video Game</button>
+<div id="game">
+  <section class="resume">
+    <h2>Experience</h2>
+    <p>During my sophomore year of college, I completed a 48hr game jam with my 5 other teammates. I took CSC Video game design my senior year and presented an indiviual game and a group video Game.</p>
+    <h2>Technologies</h2>
+    <img src="pics/unity.jpg" alt="Unity" style="width:200px; height:200px;">
+    <img src="pics/xcode.png" alt="Xcode" style="width:200px; height:200px;">
+    <img src="pics/oc.jpg" alt="Oculus" style="width:200px; height:200px;">
+    <img src="pics/vs.png" alt="Visual Studios" style="width:200px; height:200px;">
+    <section>
+      <h2>Work</h2>
+      <div class="row">
+        <div class="column">
+          <img src="pics/attack.gif" alt="attack">
+        </div>
+        <div class="column">
+          <h2>Indiviual Game Assignment: Prince's Dream</h2>
+          <p>In this game the main character, son of a king, has been confronted by this father. His father expressed his concerns about his son's mental strength. The main character goes to sleep and has a dream that
+          prevents him from waking up until he learns to believe in himself.</p>
+          <ul>
+            <li>Scripts: https://github.com/llmaze3/PrinceDream</li>
+            <li>Animated sprites: Idle, Walking, Attack</li>
+            <li>Implemented music</li>
+            <li>Original storyline</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="column">
+          <iframe src="https://drive.google.com/file/d/1a7UJHAXy6uBeC1qOGaliegZD1lVsg-W_/preview" width="640" height="480"></iframe>
+        </div>
+        <div class="column">
+          <h2>Group assignment: King Slayer</h2>
+          <p>This is a full campaign virtal reality game. Developed by myself and five other indiviuals. I was the leader of storyboarding and testing.</p>
+          <ul>
+            <li>In-game narration (voiceovers)</li>
+            <li>4 total fight scences</li>
+            <li>Interactive UI (settings menu)</li>
+            <li>3-D artwork</li>
+            <li>Health bar</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </section>
+</div>
+
+<button class="button" onclick="iosFunction()">iOS</button>
+<div id="ios">
+  <section class="resume">
+    <h2>Experience</h2>
+    <p>My CSC Object Oriented Design group developed an app that was placed on the App Store. I created an imessage sticker application for fun. My friend and I have
+    been working on developing an AR application for some time now: <a href="http://www.lloydmp3.com/vision713.html" class="button">Vision713</a></p>
+    <h2>Software</h2>
+    <img src="pics/xcode.png" alt="xcode" style="width:200px; height:200px;">
+    <img src="pics/unity.jpg" alt="unity" style="width:200px; height:200px;">
+    <img src="pics/ps.png" alt="photoshop" style="width:200px; height:200px;">
+    <h2>Work</h2>
+    <div class="row">
+      <div class="column">
+        <img src="pics/app.PNG" alt="animal paw prints">
+      </div>
+      <div class="column">
+        <h2>Animal Paw Prints</h2>
+        <p>iOS message sticker application</p>
+        <ul>
+          <li>Signed up for the Apple Developer program</li>
+          <li>All original photos (made in photoshop)</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="column">
+        <img src="pics/barstat.PNG" alt="Barstat">
+      </div>
+      <div class="column">
+        <h2>Barstat</h2>
+        <p>This app allowed users to get real-time information on Tigerland Bars in Baton Rouge.</p>
+        <ul>
+          <li>Add friends</li>
+          <li>See how many people were at a bar and using the app</li>
+          <li>Favorite a bar</li>
+          <li>Get notifications from bars about specials</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="column">
+        <img src="pics/vision.GIF" alt="vision">
+      </div>
+      <div class="column">
+        <h2>Vision713 prototype</h2>
+        <p>Take a picture with Houston themed 3-D objecs!</p>
+      </div>
+    </div>
+  </section>
+</div>
+
 <script>
 function myFunction() {
   var x = document.getElementById("myDiv");
@@ -307,6 +409,24 @@ function arFunction() {
     x.style.display = "block";
   }
 }
+function gameFunc() {
+  var x = document.getElementById("game");
+  if (x.style.display == "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function iosFunction(){
+  var x = document.getElementById("ios");
+  if (x.style.display == "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 </script>
 </body>
 </html>
