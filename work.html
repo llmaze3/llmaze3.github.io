@@ -6,7 +6,7 @@
 <title>Lloydmp3 Forever</title>
 <link href="css/newStyle.css" rel="stylesheet" type="text/css">
 <style>
-#myDiv, #Jupyter, #nextDiv, #anoDiv, #photoDiv, #Java, #Arc, #game, #ios{
+#myDiv, #Jupyter, #nextDiv, #anoDiv, #photoDiv, #Java, #Arc, #game, #ios, #cyber{
   width: 100%;
   padding: 10px 0;
   display: none;
@@ -130,6 +130,7 @@ a:visited {
   <a href="https://thetaystytreats.com"><img src="pics/Taylornowhite.png" alt="TaylorNoWhite" style="width:200px; height:200px;"></a>
   <a href="https://boiling-cliffs-50012.herokuapp.com"><img src="pics/blog.png" alt="blog" style="width:200px; height:200px;"></a>
 </div>
+
 <button class="button" onclick="anoFunction()">Database Management</button>
 <div id="anoDiv">
   <section class="resume">
@@ -143,6 +144,8 @@ a:visited {
       <img src="pics/erdiagrams.png" alt="ERdiagrans" style="width:300px; height:300px;">
       <img src="pics/Sqlpics.png" alt="Sqlpics" style="width:300px; height:300px;">
       <img src="pics/Relational.png" alt="Sqlpics" style="width:300px; height:300px;">
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSbcXSjxUYKHdSU6aRR2HD6_asB_9LBBvVvCHS_cjmRqlB-FS8pl7yCWW2BlIhWUmh4_ByDyW1LLk16/embed?start=false&loop=false&delayms=3000"
+      frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
       <p>This ER diagram shows 5 attributes and their relationships with one another. Below the diagrams is the Relational Data Model. The Primary keys and bolded and the foriegn keys are italicized.</p>
       <p>Attribute Closure F = {TY → S, S → P, S → A}
       <ul>
@@ -344,6 +347,27 @@ a:visited {
   </section>
 </div>
 
+<button class="button" onclick="cyberFunction()">Cyber Security</button>
+<div id="cyber">
+  <section class="resume">
+    <h2>Experience</h2>
+    <p><b>Relevant Coursework:</b> CSC Operating Systems, CSC Intro Cyber Security, CSC Reverse Engineering and Malware Analysis</p>
+    <h2>Software</h2>
+    <img src="pics/wireshark.png" alt="wireshark" style="width:200px; height:200px;">
+    <img src="pics/kali.png" alt="kali" style="width:200px; height:200px;">
+    <img src="pics/virtualbox.png" alt="kali" style="width:200px; height:200px;">
+    <h2>Work</h2>
+    <a href="https://drive.google.com/open?id=1kWI6Op0JCVKA5gJcMfJB3FGUX6NlNCoF" target="_blank" class="button">Assuring Accurate Asset Inventory PDF</a>
+    <p>The image below is my class work reverse Engineering a virus in Ida Pro</p>
+    <img src="pics/ida.png" alt="ida" style="width:100%;">
+    <h2>Reference</h2>
+    <img src="pics/osi.png" alt="osi" style="width:300px; height:300px;">
+    <p><b>Confidentiality:</b> the state of keeping or being kept secret or private.<br> <b>Integrity:</b> the quality of being honest and having strong moral principles; moral uprightness.<br>
+      <b>Accountability</b> Having the information available<br> <b>Authentication:</b> the process or action of proving or showing something to be true, genuine, or valid.<br><b>Authorization:</b>
+      specifying access rights/privileges to resources</p>
+  </section>
+</div>
+
 <script>
 function myFunction() {
   var x = document.getElementById("myDiv");
@@ -427,6 +451,14 @@ function iosFunction(){
   }
 }
 
+function cyberFunction(){
+  var x = document.getElementById("cyber");
+  if (x.style.display == "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 </script>
 </body>
 </html>
