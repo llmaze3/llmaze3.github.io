@@ -143,12 +143,6 @@ b{
 .button {
   display: block;
   }
-  .category {
-    display: block;
-    }
-a {
-  display: block;
-  }
 }
 @media only screen
 and (min-device-width : 375px)
@@ -159,12 +153,6 @@ and (max-device-width : 667px) {
   .button {
     display: block;
     }
-  .category {
-    display: block;
-    }
-  a {
-    display: block;
-  }
 }
 
 @media only screen
@@ -174,12 +162,6 @@ and (max-device-width : 736px) {
   width: 100%;
   }
   .button {
-    display: block;
-  }
-  .category {
-    display: block;
-  }
-  a {
     display: block;
   }
 }
