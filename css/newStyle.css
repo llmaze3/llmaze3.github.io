@@ -140,6 +140,12 @@ b{
 .column {
   width: 100%;
   }
+.button {
+  display: block;
+  }
+  .category {
+    display: block;
+    }
 a {
   display: block;
   }
@@ -150,6 +156,12 @@ and (max-device-width : 667px) {
   .column {
     width: 100%;
   }
+  .button {
+    display: block;
+    }
+  .category {
+    display: block;
+    }
   a {
     display: block;
   }
@@ -160,6 +172,12 @@ and (min-device-width : 414px)
 and (max-device-width : 736px) {
 .column {
   width: 100%;
+  }
+  .button {
+    display: block;
+  }
+  .category {
+    display: block;
   }
   a {
     display: block;
