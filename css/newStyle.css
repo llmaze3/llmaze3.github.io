@@ -44,21 +44,21 @@ section.resume {
 
 h1 {
   color: #D3D3D3;
-  font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(25px + (26 - 25) * ((100vw - 300px) / (1600 - 300)));
 }
 
 h2 {
   padding: 5px;
   color: #D3D3D3;
-  font-size: calc(18px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
 }
 
 p {
-  font-size: calc(18px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
   color: white;
 }
 a{
-  font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .title {
