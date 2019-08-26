@@ -16,7 +16,7 @@
 <link href="css/newStyle.css" rel="stylesheet" type="text/css">
 </head>
 <style>
-#Jupyter, #nextDiv, #anoDiv, #photoDiv, #Java, #Arc, #game, #ios, #cyber{
+#Jupyter, #nextDiv, #anoDiv, #photoDiv, #Java, #Arc, #game, #ios, #cyber, #algo{
   width: 100%;
   padding: 10px 0;
   display: none;
@@ -272,6 +272,14 @@ a:visited {
   </section>
 </div>
 
+<button class="button" onclick="algoFunction()">Algorithms</button>
+<div id="algo">
+  <section class="resume">
+    <p><b>1. Binary Search Trees</b> Goal: Search for an item in an array. Method: Divide and conquer. First find the middle element. IF the key is (==) to the middle then that is the answer. IF the key is greater then
+      just worry about the upper portion of the arry and if the key is lower then just worry about the lower half. The time complexity is O(log n)</p>
+  </section>
+</div>
+
 <button class="button" onclick="arFunction()">Software Architectures</button>
 <div id="Arc">
   <section class="resume">
@@ -387,6 +395,16 @@ function cyberFunction(){
     x.style.display = "block";
   }
 }
+
+function algoFunction(){
+  var w = document.getElementById("algo");
+  if (w.style.display == "block") {
+    w.style.display = "none";
+  } else {
+    w.style.display = "block";
+  }
+}
+
 </script>
 </body>
 </html>
