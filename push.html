@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143925420-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143925420-1');
+</script>
+<meta charset="UTF-8">
+<meta name="viewprt" content="width=device-width, intial-scale=1">
+<title>A Little Push</title>
+<link href="css/newStyle.css" rel="stylesheet" type="text/css">
+</head>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<style>
+body {
+  background-color: black;
+  margin: 0;
+  font-family: 'Exo+2', sans-serif;
+  text-align: center;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+  font-size: calc(50px + (60 - 50) * ((100vw - 300px) / (1920 - 375)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1920 - 375)));
+  }
+
+
+  @media screen and (max-width: 812px) {
+  .column {
+    width: 100%;
+  }
+}
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px) {
+    .column {
+      width: 100%;
+    }
+  }
+}
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+<body style="background-color:black">
+<a href="https://llmaze3.github.io" class="button">Home</a>
+<header>
+  <h1 class = "title" style="clear:left;">Me</h1>
+</header>
+<section class="container">
+  <h2 style="color:grey">about</h2>
+  <p style="color:white; text-align:center;"> A Little Push helps customers develop their online presence. I can help you build a website or  </p>
+</section>
+</body>
+</html>
